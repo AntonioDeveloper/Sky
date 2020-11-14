@@ -122,10 +122,10 @@ function show(data){
   for(let info of data){    
     for(let i = 0; i <= info.items.length; i++){   
       if(count < 1){
-        images += `<div class="carousel-item active"><img src=${info.items[i].images[0].url}></div>`; 
+        images += `<div class="carousel-item active"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`; 
         count++;
       } else {
-        images += `<div class="carousel-item"><img src=${info.items[i].images[0].url}></div>`;      
+        images += `<div class="carousel-item"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`;      
       }  
       document.querySelector('.carousel-inner').innerHTML = images;
     }
