@@ -105,31 +105,49 @@ $(document).ready(function () {
 
 });
 
+//Carrossel principal
 async function getContent(){
   try{
     const response = await fetch ('https://sky-frontend.herokuapp.com/movies');
-    const data = await response.json();
-    show(data);
+    const destaques = await response.json();
+    showCatalogo(destaques);      
+    //showDestaques(destaques);      
   } catch (error){
     console.log(error);
   }
 }
-
-function show(data){  
-  let images = '';
+//Carrossel de catálogo
+function showCatalogo(destaques){
+  let imagesCat = '';
   let count = 0;
- 
-  for(let info of data){    
-    for(let i = 0; i <= info.items.length; i++){   
-      if(count < 1){
-        images += `<div class="carousel-item active"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`; 
-        count++;
-      } else {
-        images += `<div class="carousel-item"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`;      
-      }  
-      document.querySelector('.carousel-inner').innerHTML = images;
-    }
-  }
-}
+  console.log(destaques[2].movies[0].images[0].url);  
+    
+      for(let j= 0; j <= destaques[2].movies.length; j++){
+        imagesCat += `<div class="item"><div class="pad15"><img class="d-block w-100" alt="Catálogo" src=${destaques[2].movies[j].images[0].url}></div></div>`;
+        document.querySelector('.MultiCarousel-inner').innerHTML = imagesCat;  
+        }
+      
 
-getContent();
+      }
+
+
+// function showDestaques(destaques){  
+//   let images = '';
+//   let count = 0;
+  
+//   for(let info of destaques){    
+//     for(let i = 0; i <= info.items.length; i++){   
+//       if(count < 1){
+//         images += `<div class="carousel-item active"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`; 
+//         count++;
+//       } else {
+//         images += `<div class="carousel-item"><img class="d-block w-100" alt="Destaques" src=${info.items[i].images[0].url}></div>`;      
+//       }  
+//       document.querySelector('.carousel-inner').innerHTML = images;
+//     }
+//   }
+  
+// }   
+
+    getContent();
+    
