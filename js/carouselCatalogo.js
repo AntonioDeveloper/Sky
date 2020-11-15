@@ -105,7 +105,7 @@ $(document).ready(function () {
 
 });
 
-//Carrossel principal
+//Consulta a API
 async function getContent(){
   try{
     const response = await fetch ('https://sky-frontend.herokuapp.com/movies');
