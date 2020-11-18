@@ -1,0 +1,30 @@
+#top {
+  width: 100%;
+  background-color: #f1f2fa;
+  border-bottom: 1px solid #999999;
+}
+
+#logo-navbar {
+  width: 100px;
+  display: inline;
+  margin-right: 10px;
+  float: left;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+.superior .active {
+  border-bottom: 5px solid red;
+}
+
+.nav-item a {
+  color: #666666;
+  font-weight: bold;
+}
+
+.icones-navbar {
+  width: 20px;
+  margin: 0 20px;
+}

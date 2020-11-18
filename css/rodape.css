@@ -1,0 +1,99 @@
+.rodape1 {
+  background-color: #f1f2fa;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.rodape1 ul li {
+  display: inline;
+}
+
+#logo-rodape {
+  width: 100px;
+}
+
+.rodape1 ul {
+  margin-bottom: 0 !important;
+}
+
+.brands {
+  width: 20px;
+  margin: 0 20px;
+}
+
+#logo-app-rodape {
+  width: 50px;
+  display: inline;
+  margin-right: 10px;
+  float: left;
+}
+
+.logo-stores-rodape {
+  width: 150px;
+  display: block;
+  margin-right: 10px;
+  clear: both;
+}
+
+.rodape2 {
+  background-color: #f1f2fa;
+}
+
+.rodape2 p {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  font-weight: bold;
+  display: inline;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-group {
+  border-bottom: 1px solid #666666;
+  padding: 10px 0;
+}
+
+a.accordion-toggle,
+a.accordion-toggle:hover {
+  color: #666666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accordion-inner ul {
+  list-style-type: none;
+}
+
+.accordion-inner ul li a,
+a:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+#links-rodape li {
+  display: inline;
+  color: #666666;
+  line-height: 2.5rem;
+}
+
+.legal {
+  background-color: #f1f2fa;
+}
+
+.legal p {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .brands {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .rodape1 ul {
+    float: right;
+  }
+} ;

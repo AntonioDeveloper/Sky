@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky - Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./css/rodape.css">
+    <link rel="stylesheet" type="text/css" href="./css/carousel-catalogo.css">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+     <!-- JS Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!--Slick Carousel Slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/carouselDestaque.js"></script>
+    <script src="./js/carouselCatalogo.js"></script>
+
+<!-- Menu sanfona -->
+    <style>
+      @import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+      .accordion-toggle:after {
+        font-family: 'FontAwesome';
+        content: '\f078';
+        float: right;
+      }
+      .accordion-opened .accordion-toggle:after {
+        content: '\f054';
+      }
+     </style>
+
+  </head>
+  <body>
+    
+        <!-- Container Geral -->
+    <div class="container-fluid" id="main">
+      <div class="row">
+        <section id="top">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img id="logo-navbar" src="img/logo-sky.svg" width="20%"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/user-circle-solid.svg" alt="usuário"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/adjust-solid.svg" alt="alternar cor"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/text-height-solid.svg" alt="mudar tamanho do texto"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/text-height-solid.svg" alt="mudar tamanho do texto"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/play-solid.svg" alt="play"></a>
+              </li> 
+            </ul>
+            <ul class="navbar-nav ml-auto">           
+            <li class="my-2 my-lg-0">
+              <a class="nav-link" href="#"><img class="icones-navbar" src="./img/user-circle-solid.svg" alt="entrar">Entrar</a>
+            </li>
+            <li class="my-2 my-lg-0">
+              <a class="nav-link" href="#"><img class="icones-navbar" src="./img/search-solid.svg" alt="pesquisar"></a>
+            </li>
+          </ul>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Menu horizontal -->
+      <section class="container-fluid shadow pt-2 px-0 mb-3 bg-white rounded">
+        <ul class="nav superior d-flex justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Filmes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Séries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Canais</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Destaque -->
+      <section class="container-fluid mt-2">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner"> </div>
+        </div>        
+      </section>  
+
+      <!-- Recomendações -->
+       <div class="container-fluid mt-5">
+         <p class="nome-secao">Recomendados pela SKY</p>
+         <div id="recomendacoes"></div>
+      </div> 
+      
+       <!-- Novidades da semana -->
+       <div class="container-fluid mt-5">
+        <p class="nome-secao">Recomendados pela SKY</p>
+        <div id="novidades"></div>
+      </div> 
+
+       <!-- Recomendações SKY -->
+       <div class="container-fluid mt-5">
+        <p class="nome-secao">Recomendados pela SKY</p>
+        <div id="recomendacoes2"></div>
+      </div> 
+
+       <!-- Marvel -->
+       <div class="container-fluid mt-5">
+        <p class="nome-secao">Marvel</p>
+        <div id="marvel"></div>
+      </div> 
+
+      <!-- Redes sociais -->
+      <div class="container-fluid rodape1 mt-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col col-md-2 col-lg-2 my-auto">
+            <img id="logo-rodape" src="img/logo-sky_cinza.svg">
+          </div>
+          <div class="col col-md-10 col-lg-8 py-3">
+            <ul class="row d-flex justify-content-center align-items-center">
+              <li><a><img class="brands" src="./img/facebook-f-brands.svg"></a></li>
+              <li><a><img class="brands" src="./img/twitter-brands.svg"></a></li>
+              <li><a><img class="brands" src="./img/youtube-brands.svg"></a></li>
+              <li><a><img class="brands" src="./img/instagram-brands.svg"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sobre Nós -->
+      <div class="container-fluid rodape2 pt-3">
+        <div class="row">
+          <div class="col col-md-6 col-lg-6 my-2 px-5">
+            <img id="logo-app-rodape" src="img/logo-app-sky.png">
+            <p>Baixe no seu celular o app SKY e divirta-se.</p>
+            <img class="logo-stores-rodape" src="./img/apple.png" alt="apple store" width="50px">
+            <img class="logo-stores-rodape" src="./img/google.png" alt="play store" width="100px">
+          </div>
+          <div class="col col-md-6 col-lg-6 px-5">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+              <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Sobre
+              </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <ul>
+                  <li><a href="#">Nossa história</a></li>
+                  <li><a href="#">Imprensa</a></li>
+                  <li><a href="#">Prêmios conquistados</a></li>
+                  <li><a href="#">Credenciamento</a></li>
+                  <li><a href="#">Trabalhe com a gente</a></li>
+                  <li><a href="#">Promoção</a></li>
+                </ul>
+              </div>
+              </div>
+              </div>
+  
+              <div class="accordion-group">
+              <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              Nossas responsabilidades
+              </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+              <ul>
+                  <li><a href="#">Conselhos aos usuários</a></li>
+                  <li><a href="#">Pesquisa Anatel</a></li>
+                  <li><a href="#">Relatórios de transparência</a></li>
+                  <li><a href="#">Responsabilidade social</a></li>
+                  <li><a href="#">Acessibilidade</a></li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Ajuda
+                </a>
+                   </div>
+                   <div id="collapseTwo" class="accordion-body collapse">
+                   <div class="accordion-inner">
+                     <ul>
+                       <li><a href="#">Central de ajuda</a></li>
+                     </ul>              
+                   </div>
+                   </div>
+                 </div>
+                 <a href="#" style="color: #666666; font-weight: bold; text-decoration: none; 
+                 line-height: 2rem;">SKY Empresas</a>
+                 </div>  
+               </div>
+             </div>
+        </div>          
+          
+           <div class="row mt-2 py-3 mx-auto">
+            <div class="col">
+              <ul id="links-rodape">
+                <li>Início |</li>
+                <li>Política de Privacidade |</li>
+                <li>Contratos Gerais |</li>
+                <li>Contratos Pré-pagos</li>
+                <li>Cancelamento</li>
+                <li>Ouvidoria</li>
+                <li>Consumidor.gov</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+          <div class="row legal py-3">
+            <div class="col">
+              <p>
+                ® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade 
+                intelectual inserida nelas são de propriedade da SKY Internacional AG e usadas 
+                pela SKY Serviços de Banda Larga LTDA. mediante licença.
+              </p>
+            </div>
+          </div>
+          </div> 
+      
+  <script>
+     $(document).on('show','.accordion', function (e) {
+      
+         $(e.target).prev('.accordion-heading').addClass('accordion-opened');
+    });
+    
+    $(document).on('hide','.accordion', function (e) {
+        $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
+    });
+  </script>
+</body>
+</html>
