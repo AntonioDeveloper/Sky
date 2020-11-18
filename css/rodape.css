@@ -28,6 +28,13 @@
   float: left;
 }
 
+.logo-stores-rodape {
+  width: 150px;
+  display: block;
+  margin-right: 10px;
+  clear: both;
+}
+
 .rodape2 {
   background-color: #f1f2fa;
 }

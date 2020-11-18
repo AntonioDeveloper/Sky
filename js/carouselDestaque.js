@@ -14,6 +14,7 @@ async function getContent(){
 function showDestaques(destaques){  
   let images = '';
   let count = 0;
+
   for(let info of destaques){    
     for(let i = 0; i <= info.items.length; i++){   
       if(count < 1){

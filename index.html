@@ -56,30 +56,29 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/user-circle-solid.svg" alt="usuário"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/adjust-solid.svg" alt="alternar cor"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/text-height-solid.svg" alt="mudar tamanho do texto"></a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/text-height-solid.svg" alt="mudar tamanho do texto"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icones-navbar" src="./img/play-solid.svg" alt="play"></a>
+              </li> 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <ul class="navbar-nav ml-auto">           
+            <li class="my-2 my-lg-0">
+              <a class="nav-link" href="#"><img class="icones-navbar" src="./img/user-circle-solid.svg" alt="entrar">Entrar</a>
+            </li>
+            <li class="my-2 my-lg-0">
+              <a class="nav-link" href="#"><img class="icones-navbar" src="./img/search-solid.svg" alt="pesquisar"></a>
+            </li>
+          </ul>
           </div>
         </nav>
       </section>
@@ -100,10 +99,10 @@
       </section>
 
       <!-- Destaque -->
-      <section class="container-fluid  mt-5">
+      <section class="container-fluid mt-2">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner"> </div>
-        </div>
+        </div>        
       </section>  
 
       <!-- Recomendações -->
@@ -131,7 +130,7 @@
       </div> 
 
       <!-- Redes sociais -->
-      <div class="container-fluid rodape1">
+      <div class="container-fluid rodape1 mt-3">
         <div class="row d-flex justify-content-center">
           <div class="col col-md-2 col-lg-2 my-auto">
             <img id="logo-rodape" src="img/logo-sky_cinza.svg">
@@ -148,77 +147,76 @@
       </div>
 
       <!-- Sobre Nós -->
-      <div class="container-fluid rodape2">
+      <div class="container-fluid rodape2 pt-3">
         <div class="row">
-          <div class="col my-2">
+          <div class="col col-md-6 col-lg-6 my-2 px-5">
             <img id="logo-app-rodape" src="img/logo-app-sky.png">
             <p>Baixe no seu celular o app SKY e divirta-se.</p>
+            <img class="logo-stores-rodape" src="./img/apple.png" alt="apple store" width="50px">
+            <img class="logo-stores-rodape" src="./img/google.png" alt="play store" width="100px">
           </div>
-        </div>
-          
-          <!-- Menu sanfona -->
-        <div class="row px-3">
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-            <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-            Sobre
-            </a>
-            </div>
-            <div id="collapseOne" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <ul>
-                <li><a href="#">Nossa história</a></li>
-                <li><a href="#">Imprensa</a></li>
-                <li><a href="#">Prêmios conquistados</a></li>
-                <li><a href="#">Credenciamento</a></li>
-                <li><a href="#">Trabalhe com a gente</a></li>
-                <li><a href="#">Promoção</a></li>
-              </ul>
-            </div>
-            </div>
-            </div>
-
-            <div class="accordion-group">
-            <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-            Nossas responsabilidades
-            </a>
-            </div>
-            <div id="collapseTwo" class="accordion-body collapse">
-            <div class="accordion-inner">
-            <ul>
-                <li><a href="#">Conselhos aos usuários</a></li>
-                <li><a href="#">Pesquisa Anatel</a></li>
-                <li><a href="#">Relatórios de transparência</a></li>
-                <li><a href="#">Responsabilidade social</a></li>
-                <li><a href="#">Acessibilidade</a></li>
-              </ul>
-            </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-              Ajuda
+          <div class="col col-md-6 col-lg-6 px-5">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+              <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+              Sobre
               </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <ul>
+                  <li><a href="#">Nossa história</a></li>
+                  <li><a href="#">Imprensa</a></li>
+                  <li><a href="#">Prêmios conquistados</a></li>
+                  <li><a href="#">Credenciamento</a></li>
+                  <li><a href="#">Trabalhe com a gente</a></li>
+                  <li><a href="#">Promoção</a></li>
+                </ul>
+              </div>
+              </div>
+              </div>
+  
+              <div class="accordion-group">
+              <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+              Nossas responsabilidades
+              </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+              <ul>
+                  <li><a href="#">Conselhos aos usuários</a></li>
+                  <li><a href="#">Pesquisa Anatel</a></li>
+                  <li><a href="#">Relatórios de transparência</a></li>
+                  <li><a href="#">Responsabilidade social</a></li>
+                  <li><a href="#">Acessibilidade</a></li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                Ajuda
+                </a>
+                   </div>
+                   <div id="collapseTwo" class="accordion-body collapse">
+                   <div class="accordion-inner">
+                     <ul>
+                       <li><a href="#">Central de ajuda</a></li>
+                     </ul>              
+                   </div>
+                   </div>
                  </div>
-                 <div id="collapseTwo" class="accordion-body collapse">
-                 <div class="accordion-inner">
-                   <ul>
-                     <li><a href="#">Central de ajuda</a></li>
-                   </ul>              
-                 </div>
-                 </div>
+                 <a href="#" style="color: #666666; font-weight: bold; text-decoration: none; 
+                 line-height: 2rem;">SKY Empresas</a>
+                 </div>  
                </div>
-               <a href="#" style="color: #666666; font-weight: bold; text-decoration: none; 
-               line-height: 2rem;">SKY Empresas</a>
-               </div>  
              </div>
-           </div>
-           </div>
-
-           <div class="row mt-2 py-3">
+        </div>          
+          
+           <div class="row mt-2 py-3 mx-auto">
             <div class="col">
               <ul id="links-rodape">
                 <li>Início |</li>
@@ -231,7 +229,8 @@
               </ul>
             </div>
           </div>
-    
+        </div>
+
           <div class="row legal py-3">
             <div class="col">
               <p>
