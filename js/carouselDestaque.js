@@ -3,6 +3,7 @@ async function getContent(){
   try{
     const response = await fetch ('https://sky-frontend.herokuapp.com/movies');
     const destaques = await response.json();
+    
     showDestaques(destaques);      
   } catch (error){
     console.log(error);
@@ -13,7 +14,6 @@ async function getContent(){
 function showDestaques(destaques){  
   let images = '';
   let count = 0;
-  
   for(let info of destaques){    
     for(let i = 0; i <= info.items.length; i++){   
       if(count < 1){
